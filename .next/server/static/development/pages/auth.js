@@ -163,7 +163,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const authPage = () => __jsx("div", {
+const authPage = props => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -177,7 +177,7 @@ const authPage = () => __jsx("div", {
     lineNumber: 6,
     columnNumber: 9
   }
-}, "The Auth Index Page"), __jsx(_components_User__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, "The Auth Index Page => ", props.appName), __jsx(_components_User__WEBPACK_IMPORTED_MODULE_1__["default"], {
   name: "John",
   age: "22",
   __self: undefined,
@@ -187,6 +187,17 @@ const authPage = () => __jsx("div", {
     columnNumber: 9
   }
 }));
+
+authPage.getInitialProps = context => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({
+        appName: 'My App'
+      });
+    }, 1000);
+  });
+  return promise;
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (authPage);
 
