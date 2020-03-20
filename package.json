@@ -1,0 +1,19 @@
+{
+  "name": "basic-next-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianPeralta/basic-next-app.git"
+  },
+  "author": "Cristian Peralta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CristianPeralta/basic-next-app/issues"
+  },
+  "homepage": "https://github.com/CristianPeralta/basic-next-app#readme"
+}
