@@ -4523,21 +4523,21 @@ var IndexPage = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 17,
           columnNumber: 13
         }
       }, __jsx("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 18,
           columnNumber: 17
         }
-      }, "The Main Page"), __jsx("p", {
+      }, "The Main Page => ", this.props.appName), __jsx("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 19,
           columnNumber: 17
         }
       }, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -4545,14 +4545,14 @@ var IndexPage = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 19,
           columnNumber: 26
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 19,
           columnNumber: 45
         }
       }, "Auth")), " "), __jsx("button", {
@@ -4562,7 +4562,7 @@ var IndexPage = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 20,
           columnNumber: 17
         }
       }, "Go to Auth"));
@@ -4570,12 +4570,19 @@ var IndexPage = /*#__PURE__*/function (_Component) {
   }], [{
     key: "getInitialProps",
     value: function getInitialProps(context) {
+      var promise;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function getInitialProps$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              console.log(context);
-              return _context.abrupt("return", {});
+              promise = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                  resolve({
+                    appName: 'My App'
+                  });
+                }, 1000);
+              });
+              return _context.abrupt("return", promise);
 
             case 2:
             case "end":
