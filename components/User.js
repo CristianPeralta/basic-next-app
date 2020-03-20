@@ -2,7 +2,7 @@ import React from 'react';
 
 const user = (props) => {
     return (
-        <dib>
+        <div>
             <h1>{props.name}</h1>
             <p>Age {props.age}</p>
             <style jsx>{`
@@ -14,7 +14,7 @@ const user = (props) => {
                 }
             `}
             </style>
-        </dib>
+        </div>
     );
 };
 

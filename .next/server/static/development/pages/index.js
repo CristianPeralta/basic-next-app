@@ -1790,26 +1790,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 class IndexPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  static async getInitialProps(context) {
+    console.log(context);
+    return {};
+  }
+
   render() {
     return __jsx("div", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8,
+        lineNumber: 13,
         columnNumber: 13
       }
     }, __jsx("h1", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9,
+        lineNumber: 14,
         columnNumber: 17
       }
     }, "The Main Page"), __jsx("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
+        lineNumber: 15,
         columnNumber: 17
       }
     }, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -1817,14 +1822,14 @@ class IndexPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
+        lineNumber: 15,
         columnNumber: 26
       }
     }, __jsx("a", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
+        lineNumber: 15,
         columnNumber: 45
       }
     }, "Auth")), " "), __jsx("button", {
@@ -1832,7 +1837,7 @@ class IndexPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 16,
         columnNumber: 17
       }
     }, "Go to Auth"));
