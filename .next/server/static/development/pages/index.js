@@ -1789,53 +1789,58 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const indexPage = () => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 5
+class IndexPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 13
+      }
+    }, __jsx("h1", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 17
+      }
+    }, "The Main Page"), __jsx("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 17
+      }
+    }, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/auth",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 26
+      }
+    }, __jsx("a", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 45
+      }
+    }, "Auth")), " "), __jsx("button", {
+      onClick: () => next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push("/auth"),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 17
+      }
+    }, "Go to Auth"));
   }
-}, __jsx("h1", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 9
-  }
-}, "The Main Page"), __jsx("p", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 9
-  }
-}, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/auth",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 18
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 37
-  }
-}, "Auth")), " "), __jsx("button", {
-  onClick: () => next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push("/auth"),
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 9
-  }
-}, "Go to Auth"));
 
-/* harmony default export */ __webpack_exports__["default"] = (indexPage);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
 
 /***/ }),
 
